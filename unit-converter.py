@@ -30,7 +30,7 @@ while True: #set the program loop using "while"
     print("0. Exit")                
 
     try: 
-        choice = int(input("Enter your choice (1-6): ")) #choosing needed converting pair
+        choice = int(input("Enter your choice (0-6): ")) #choosing needed converting pair
         if choice == 1:
             unit = "Celsius"
         if choice == 2:
