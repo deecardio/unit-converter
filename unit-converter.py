@@ -50,6 +50,7 @@ while True: #set the program loop using "while"
             continue
     except ValueError:  #if user will enter wrong symbols programm won't stop, but ask again for right symbol
             print("Something went wrong! Please try again!")
+            continue
 
 
     while True: #loop to ensure valid number input
