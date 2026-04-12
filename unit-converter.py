@@ -8,10 +8,10 @@ def converter(number, unit):  #function that converts values based on unit type
             result = f"{number} {unit} equals {round((number - 32) * 5/9, 2)} Celsius!"
             return(result)
         elif unit == "Kilometers": #distance
-            result = f"{number} {unit} equals {round(number * 1.60, 2)} Miles!"
+            result = f"{number} {unit} equals {round(number * 0.621, 2)} Miles!"
             return(result)
         elif unit == "Miles": #distance
-            result = f"{number} {unit} equals {round(number * 0.62, 2)} Kilometers!"
+            result = f"{number} {unit} equals {round(number * 1.609, 2)} Kilometers!"
             return(result)
         elif unit == "Kilograms": #weight
             result = f"{number} {unit} equals {round(number * 2.2, 2)} Pounds!"
@@ -33,19 +33,19 @@ while True: #set the program loop using "while"
         choice = int(input("Enter your choice (0-6): ")) #choosing needed converting pair
         if choice == 1:
             unit = "Celsius"
-        if choice == 2:
+        elif choice == 2:
             unit = "Fahrenheit"
-        if choice == 3:
+        elif choice == 3:
             unit = "Kilometers"
-        if choice == 4:
+        elif choice == 4:
             unit = "Miles"
-        if choice == 5:
+        elif choice == 5:
             unit = "Kilograms"
-        if choice == 6:
+        elif choice == 6:
             unit = "Pounds"
-        if choice == 0: #this allows to exit 
+        elif choice == 0: #this allows to exit 
             exit()
-        if choice not in [0, 1, 2, 3, 4, 5, 6]: #by "not in" checking if the choice in our frame
+        elif choice not in [0, 1, 2, 3, 4, 5, 6]: #by "not in" checking if the choice in our frame
             print("Please enter a number from 0 to 6!")
             continue
     except ValueError:  #if user will enter wrong symbols programm won't stop, but ask again for right symbol
