@@ -31,7 +31,9 @@ while True: #set the program loop using "while"
 
     try: 
         choice = int(input("Enter your choice (0-6): ")) #choosing needed converting pair
-        if choice == 1:
+        if choice == 0: #this allows to exit 
+            exit()
+        elif choice == 1:
             unit = "Celsius"
         elif choice == 2:
             unit = "Fahrenheit"
@@ -43,8 +45,6 @@ while True: #set the program loop using "while"
             unit = "Kilograms"
         elif choice == 6:
             unit = "Pounds"
-        elif choice == 0: #this allows to exit 
-            exit()
         elif choice not in [0, 1, 2, 3, 4, 5, 6]: #by "not in" checking if the choice in our frame
             print("Please enter a number from 0 to 6!")
             continue
